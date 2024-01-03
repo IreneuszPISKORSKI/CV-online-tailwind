@@ -6,14 +6,72 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>CV with help of Tailwind</title>
 </head>
-<body class="bg-local bg-no-repeat bg-top" style="background-image: url(photo/header.jpg)">
+<body class="min-h-screen bg-gradient-to-br from-stone-900 to-blue-900 flex flex-col">
+    <div class="bg-local bg-no-repeat bg-top h-16 md:h-24 xl:h-28 absolute top-0 left-0 right-0 z-0" style="background-image: url(photo/header.jpg)"> </div>
     <header>
-        <div class="flex flex-col">
-            <!-- <img src="photo/headerSm.jpg" alt="background photo small" class="w-1/2 hover:w-1/3"> -->
-            <img class="size-40 rounded-full" src="photo/photo1.jpg" alt="Photo d'Irek">
-            <h1 class="text-3xl font-sans hover:font-serif">PISKORSKI Ireneusz</h1>
-            <p class="text-xl">Développeur WEB et Etudiant en concepteur développeur d’applications spécialiste Java</p>
+        <div class="flex flex-col items-center">
+            <img class="size-20 md:size-40 rounded-full m-6 md:m-4 xl:m-8 z-10" src="photo/photo1.jpg" alt="Photo d'Irek">
+            <div class="flex flex-row justify-center mt-8">
+                <div>
+                    <a href="index.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-800 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Home</a>
+                </div>
+                <div>
+                    <a href="hobby.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Hobby</a>
+                </div>
+                <div>
+                    <a href="contact.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Contact</a>
+                </div>
+                <!-- <div>
+                    <a href="passe.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Un peu d'histoire</a>
+                </div>
+                <div>
+                    <a href="profil.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Mon profil</a>
+                </div>
+                <div>
+                    <a href="projets.html" class="px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-2">Mes projets</a>
+                </div> -->
+            </div>
+            <div>
+                <h1 class="text-slate-300 text-xl md:text-3xl lg:text-5xl mt-8 px-8 font-sans hover:font-serif font-bold">PISKORSKI Ireneusz</h1>
+                <p class="text-gray-500 text-xs md:text-base lg:text-xl px-8 mt-1 md:mt-4">Développeur Web et étudiant en Conception et Développement d'Applications, spécialisation Java</p>
+            </div>
         </div>
     </header>
+
+    <div class="text-center mx-8 mt-4 text-xs md:text-base lg:text-xl text-blue-200">
+        Bienvenue sur mon site, où vous pourrez trouver des informations sur moi.
+    </div>
+    <div class="flex-col my-3 mx-8">
+        <div>
+            <div class="bg-gradient-to-br from-teal-600 to-blue-900 flex flex-col p-6 rounded">
+                <h3 class="text-blue-100 text-base md:text-2xl font-bold">En cours: formation Concepteur Développeur d’Applications spécialiste Java</h3>
+                <p>La formation est sanctionnée par l’obtention du Titre RNCP de niveau 6 (équivalent Bac+3)
+                    «Concepteur Développeur d’Applications» du Ministère du Travail, de l’Emploi et de l’Insertion
+                    (RNCP N°31678).</p>
+                <p>La formation CDA s'étend sur une période de 15 mois et est structurée en deux phases:</p>
+                <p>• La première phase dure 3 mois (399 heures  de formation).</p>
+                <p>• La deuxième phase consiste en 12 mois d'alternance, comprenant 449,5 heures de formation.</p>
+            
+                <a href="https://le-campus-numerique.fr/wp-content/uploads/2023/07/24CDAG_Programme-alternance-V2.docx-1.pdf" class="px-8 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-auto mt-4" target="_blank">Voir plus</a>
+            </div>
+            <hr class="my-3">
+
+            <div class="bg-gradient-to-br from-green-500 to-blue-900 flex flex-col p-6 rounded">
+                <h3 class="text-blue-100 text-base md:text-2xl font-bold">Formation complétée: Starting DEV au Campus Numérique dans les ALPES</h3>
+                <p>Cette formation conduit à l'obtention du diplôme de niveau 5 du Titre professionnel RNCP (équivalent Bac+2) 
+                    intitulé «Développeur Web et Web Mobile», délivré par le Ministère du Travail, de l’Emploi et de l’Insertion sous le numéro 37674.</p>
+                <p>La formation Starting Dev s'étend sur une période de 24 mois et est structurée en trois phases:</p>
+                <p>• La première phase dure 6 mois (588 heures de formation + deux stages en milieu professionnel totalisant 203 heures).</p>
+                <p>• La deuxième phase s'étend sur 6 mois avec une formation intensive de 812 heures.</p>
+                <p>• La troisième phase consiste en 12 mois d'alternance, comprenant 525 heures de formation.</p>
+                <a href="https://le-campus-numerique.fr/wp-content/uploads/2022/02/Programme-Formation-Starting-Dev-240422.pdf" class="px-8 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200 mx-auto mt-4" target="_blank">Voir plus</a>
+            </div>
+            <hr class="my-3">
+        </div>
+        
+
+        <h5 class="text-end text-red-300 hover:text-red-800">Dernière actualisation: 02/01/2024</h3>
+    </div>
+
 </body>
 </html>
